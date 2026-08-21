@@ -1,0 +1,33 @@
+.mdr-kyc { flex: 1; display: flex; flex-direction: column; background: var(--bg); }
+.mdr-kyc__body { flex: 1; padding: 4px 20px 28px; display: flex; flex-direction: column; }
+
+.mdr-kyc__card { margin-bottom: 28px; }
+.mdr-kyc__row { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.mdr-kyc__rowtitle { font-size: 14.5px; font-weight: 700; color: var(--navy); }
+.mdr-kyc__rowdesc { font-size: 12.5px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+.mdr-kyc__done {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+
+.mdr-kyc__sectiontitle { font-size: 15px; font-weight: 700; color: var(--navy); }
+.mdr-kyc__sectionsub { font-size: 12.5px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+
+.mdr-kyc__options { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+.mdr-kyc__option {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1.5px solid var(--border);
+  padding: 14px 16px;
+}
+.mdr-kyc__option.is-selected { border-color: var(--coral); box-shadow: 0 0 0 3px var(--coral-light); }
+.mdr-kyc__optionlabel { font-size: 14px; font-weight: 600; color: var(--navy); }
+.mdr-kyc__optionhint { font-size: 12px; color: var(--muted); }
+
+.mdr-kyc__footer { margin-top: auto; padding-top: 24px; }

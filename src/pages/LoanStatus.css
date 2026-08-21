@@ -1,0 +1,58 @@
+.mdr-status { flex: 1; display: flex; flex-direction: column; min-height: 0; background: var(--bg); }
+.mdr-status__body { flex: 1; overflow-y: auto; padding: 4px 20px 28px; display: flex; flex-direction: column; gap: 14px; }
+
+.mdr-status__hero { background: var(--navy); }
+.mdr-status__herolabel { font-size: 12.5px; color: rgba(255,255,255,0.55); }
+.mdr-status__herovalue { font-size: 30px; font-weight: 700; color: var(--white); margin: 4px 0 16px; }
+
+.mdr-status__bar {
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: rgba(255,255,255,0.12);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.mdr-status__bar--thin { background: var(--bg); }
+.mdr-status__barfill { height: 100%; background: var(--coral); border-radius: var(--radius-pill); transition: width 0.6s ease; }
+
+.mdr-status__barlabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 18px;
+}
+.mdr-status__bar--thin + .mdr-status__barlabels,
+.mdr-status__bar--thin ~ .mdr-status__barlabels { color: var(--muted); }
+
+.mdr-status__cardtitle { font-size: 14.5px; font-weight: 700; color: var(--navy); }
+.mdr-status__carddesc { font-size: 12.5px; color: var(--muted); line-height: 1.55; margin-top: 6px; margin-bottom: 14px; }
+
+.mdr-status__stats { display: flex; gap: 32px; }
+.mdr-status__statlabel { font-size: 11.5px; color: var(--muted); }
+.mdr-status__statvalue { font-size: 16px; font-weight: 700; color: var(--navy); margin-top: 2px; }
+
+.mdr-status__topuphead { display: flex; align-items: center; justify-content: space-between; }
+.mdr-status__eligible {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.mdr-status__disbursals { margin-top: 10px; }
+.mdr-status__disbursals li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.mdr-status__disbursals li:last-child { border-bottom: none; }
+.mdr-status__dpurpose { font-weight: 600; }
+.mdr-status__ddate { font-size: 11.5px; color: var(--muted); font-weight: 400; margin-top: 2px; }

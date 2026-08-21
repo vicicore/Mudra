@@ -1,0 +1,29 @@
+.mdr-loanapp { flex: 1; display: flex; flex-direction: column; background: var(--bg); }
+.mdr-loanapp__body { flex: 1; overflow-y: auto; padding: 4px 20px 28px; }
+
+.mdr-loanapp__intro { background: var(--coral-light); border: none; margin-bottom: 16px; }
+.mdr-loanapp__introtitle { font-size: 12.5px; font-weight: 700; color: var(--coral-dark); text-transform: uppercase; letter-spacing: 0.04em; }
+.mdr-loanapp__introdesc { font-size: 13px; color: var(--navy); margin-top: 6px; line-height: 1.55; }
+
+.mdr-loanapp--success {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 14px;
+  padding: 40px 28px;
+}
+.mdr-loanapp__check {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.mdr-loanapp__successtitle { font-size: 22px; font-weight: 700; color: var(--navy); }
+.mdr-loanapp__successdesc { font-size: 13.5px; color: var(--muted); line-height: 1.6; max-width: 32ch; margin-bottom: 10px; }

@@ -1,0 +1,19 @@
+.mdr-card {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(8, 23, 44, 0.03);
+}
+
+.mdr-card--padded {
+  padding: 18px;
+}
+
+button.mdr-card,
+[role="button"].mdr-card {
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+[role="button"].mdr-card:active { transform: scale(0.985); }

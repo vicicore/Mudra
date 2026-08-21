@@ -1,0 +1,86 @@
+.mdr-welcome {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px calc(28px + env(safe-area-inset-bottom, 0));
+  background:
+    radial-gradient(120% 60% at 100% 0%, rgba(251,89,80,0.10), transparent 60%),
+    var(--navy);
+  color: var(--white);
+}
+
+.mdr-welcome__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mdr-welcome__wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.mdr-welcome__hero {
+  margin-top: 48px;
+}
+
+.mdr-welcome__pulse {
+  width: 100%;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.mdr-welcome__headline {
+  font-size: 34px;
+  line-height: 1.12;
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.mdr-welcome__sub {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.68);
+  max-width: 34ch;
+}
+
+.mdr-welcome__points {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mdr-welcome__points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.85);
+}
+.mdr-welcome__dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(251,89,80,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mdr-welcome__actions {
+  margin-top: auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mdr-welcome__actions .mdr-btn--secondary {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255,255,255,0.25);
+}

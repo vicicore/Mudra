@@ -1,0 +1,40 @@
+.mdr-consent { flex: 1; display: flex; flex-direction: column; background: var(--bg); }
+.mdr-consent__body { flex: 1; padding: 4px 20px 28px; display: flex; flex-direction: column; gap: 16px; }
+
+.mdr-consent__banner { background: var(--navy); }
+.mdr-consent__bannertitle { color: var(--white); font-weight: 700; font-size: 14px; }
+.mdr-consent__bannerdesc { color: rgba(255,255,255,0.65); font-size: 12.5px; line-height: 1.55; margin-top: 6px; }
+
+.mdr-consent__meta {
+  font-size: 11.5px;
+  color: var(--muted-soft);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.mdr-consent__footer { margin-top: auto; padding-top: 12px; display: flex; flex-direction: column; gap: 4px; }
+
+.mdr-consent--loading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 40px;
+  text-align: center;
+  background: var(--navy);
+  color: var(--white);
+}
+.mdr-consent__spinner {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.15);
+  border-top-color: var(--coral);
+  animation: mdr-spin 0.9s linear infinite;
+}
+.mdr-consent__loadingtitle { font-family: var(--font-display); font-weight: 700; font-size: 17px; }
+.mdr-consent__loadingsub { font-size: 13px; color: rgba(255,255,255,0.6); max-width: 30ch; line-height: 1.5; }
+
+@keyframes mdr-spin { to { transform: rotate(360deg); } }

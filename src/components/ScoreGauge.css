@@ -1,0 +1,54 @@
+.mdr-gauge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mdr-gauge svg { transform: rotate(-90deg); }
+
+.mdr-gauge__track {
+  fill: none;
+  stroke: rgba(8, 23, 44, 0.07);
+  stroke-width: 10;
+}
+
+.mdr-gauge__value {
+  fill: none;
+  stroke: var(--coral);
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mdr-gauge__center {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.mdr-gauge__score {
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.mdr-gauge__band {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-top: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mdr-gauge__value { animation: mdr-gauge-in 1.1s cubic-bezier(0.22, 1, 0.36, 1); }
+}
+@keyframes mdr-gauge-in {
+  from { stroke-dasharray: 0 452; }
+}

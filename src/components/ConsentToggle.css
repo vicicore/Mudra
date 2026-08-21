@@ -1,0 +1,39 @@
+.mdr-consent-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.mdr-consent-row:last-child { border-bottom: none; }
+
+.mdr-consent-row__label { font-size: 14px; font-weight: 600; color: var(--navy); }
+.mdr-consent-row__desc { font-size: 12.5px; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+
+.mdr-toggle {
+  width: 42px;
+  height: 25px;
+  border-radius: var(--radius-pill);
+  background: var(--border);
+  border: none;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.mdr-toggle.is-on { background: var(--coral); }
+.mdr-toggle:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.mdr-toggle__thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  transition: transform 0.15s ease;
+}
+.mdr-toggle.is-on .mdr-toggle__thumb { transform: translateX(17px); }
